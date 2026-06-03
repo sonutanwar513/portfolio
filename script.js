@@ -1,31 +1,13 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
 
     const toggle = document.getElementById("menu-toggle");
     const navLinks = document.getElementById("nav-links");
 
-    if(toggle && navLinks){
+    console.log("JS Loaded");
 
-        toggle.addEventListener("click", function (e) {
-            e.stopPropagation();
-            navLinks.classList.toggle("active");
-        });
-
-        document.addEventListener("click", function (e) {
-            if (
-                !navLinks.contains(e.target) &&
-                !toggle.contains(e.target)
-            ) {
-                navLinks.classList.remove("active");
-            }
-        });
-
-        // Menu item click hone par menu close ho jaye
-        document.querySelectorAll("#nav-links a").forEach(link => {
-            link.addEventListener("click", () => {
-                navLinks.classList.remove("active");
-            });
-        });
-
-    }
+    toggle.addEventListener("click", () => {
+        console.log("Menu Clicked");
+        navLinks.classList.toggle("active");
+    });
 
 });

@@ -379,34 +379,6 @@ body {
     .main-info h1 { font-size: 30px; }
 }
 
-@media (max-width: 768px) {
-
-    .navbar {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
-    }
-
-    .container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .contact-container {
-        grid-template-columns: 1fr;
-    }
-
-    .about-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .project-showcase {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
 @media (max-width: 480px) {
 
     .navbar ul {
